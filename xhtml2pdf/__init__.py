@@ -42,7 +42,7 @@ try:
 
     if not REPORTLAB22:
         raise ImportError("Reportlab Toolkit Version 2.2 or higher needed")
-except ImportError as e:
+except ImportError, e:
     import sys
 
     sys.stderr.write(REQUIRED_INFO % e)
