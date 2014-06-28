@@ -277,7 +277,7 @@ class pisaTagLI(pisaTag):
             f = frag.listStyleImage
             if f and (not f.notFound()):
                 img = PmlImage(
-                    f.getData(),
+                    f,
                     width=None,
                     height=None)
                 img.drawHeight *= dpi96
@@ -327,7 +327,7 @@ class pisaTagIMG(pisaTag):
                     height = attr.height * dpi96
 
                 img = PmlImage(
-                    attr.src.getData(),
+                    attr.src,
                     width=None,
                     height=None)
 

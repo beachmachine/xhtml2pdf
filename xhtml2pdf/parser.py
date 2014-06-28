@@ -235,9 +235,6 @@ def getCSSAttrCacheKey(node):
     return "%s#%s#%s#%s#%s" % (id(node.parentNode), node.tagName.lower(), _cl, _id, _st)
 
 def CSSCollect(node, c):
-    #node.cssAttrs = {}
-    #return node.cssAttrs
-
     if c.css:
 
         _key = getCSSAttrCacheKey(node)
